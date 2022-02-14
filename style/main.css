@@ -1,0 +1,753 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+}
+
+main {
+    background-color: #ddd;
+}
+
+
+
+
+/*------------ NAVBAR ------------*/
+header {
+    position: fixed;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: whitesmoke;
+    width: 100%;
+    z-index: 10;
+    top: 0;
+
+}
+
+
+
+header ul a,
+.login,
+.signup {
+    color: #0088a9;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.nav_logo {
+    cursor: pointer;
+    width: 60px;
+    border-style: none;
+    margin-left: 20px;
+}
+
+.nav_links {
+    margin-left: 9rem;
+    list-style: none;
+    display: flex;
+    /* align-items: center; */
+}
+
+.nav_links li {
+    padding: 0 30px;
+}
+
+
+.nav_links li a:hover,
+.login:hover,
+.account:hover {
+    border-bottom: solid 2px #06afda;
+}
+
+.login {
+    padding: 0;
+    margin-right: 20px;
+    padding-bottom: -20px;
+    margin-top: 7px;
+}
+
+.nav_login {
+    margin-right: 20px;
+    display: flex;
+}
+
+.signup {
+    color: whitesmoke;
+    background-color: #0088a9;
+    border: solid 2px #0088a9;
+    transition: ease 0.5s all;
+    padding: 5px 10px;
+}
+
+.signup:hover {
+    border: solid 2px #06afda;
+    background-color: #06afda
+}
+
+.account {
+    color: #0088a9;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 0;
+    letter-spacing: 1.1px;
+    cursor: pointer;
+    margin-top: 7px;
+    margin-right: 20px;
+    padding-bottom: -20px;
+
+}
+
+
+
+/*------------ MAIN ------------*/
+
+/* Welcome */
+
+.container {
+    max-width: 1920px;
+    display: block;
+    top: 0;
+    left: 0;
+}
+
+.div_welcome {
+    position: relative;
+    display: block;
+    height: 100vh;
+}
+
+.layer {
+    background-color: rgba(58, 58, 56, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+.div_welcome img {
+    background-color: rgba(32, 32, 32, 0.425);
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    filter: brightness(50%);
+}
+
+.div_welcome video {
+    position: absolute;
+    min-width: 100vw;
+    /* height: 100vh; */
+    filter: brightness(50%);
+}
+
+.div_welcome .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+}
+
+.div_welcome h1 {
+    position: relative;
+    font-size: 5em;
+    color: rgba(206, 205, 205);
+    font-weight: 300;
+}
+
+
+/* Glimps of Hawaii */
+.div_glimpse {
+    position: relative;
+    height: 196vh;
+    display: block;
+    background-color: whitesmoke;
+}
+
+.div_glimpse h2 {
+    position: absolute;
+    font-size: 4rem;
+    top: 40px;
+    left: 30vw;
+    color: rgb(46, 46, 59);
+    border-bottom: solid 5px currentColor;
+}
+
+.div_festival {
+    position: relative;
+    display: block;
+    margin-left: 10%;
+    margin-top: 17%;
+    float: left;
+}
+
+.div_festival img {
+    position: relative;
+    width: 25vw;
+    float: left;
+}
+
+.festival_text {
+    float: left;
+    margin-left: 100px;
+    position: relative;
+    margin-top: 10px;
+}
+
+.festival_text a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.festival_text h3 {
+    font-size: 2.1rem;
+    color: #0088a9;
+    font-weight: 700;
+    position: relative;
+}
+
+.festival_text p {
+    position: relative;
+    margin-top: 30px;
+    width: 500px;
+    font-size: 1.4rem;
+
+}
+
+.more {
+    position: absolute;
+    margin-top: 30px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: gray;
+}
+
+
+
+.div_culture {
+    position: relative;
+    display: block;
+    margin-right: 10%;
+    margin-top: 8%;
+    float: right;
+}
+
+.div_culture img {
+    position: relative;
+    width: 25vw;
+    float: right;
+}
+
+.culture_text {
+    float: right;
+    position: relative;
+    margin-right: 100px;
+    margin-top: 30px;
+}
+
+.culture_text a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.culture_text h3 {
+    font-size: 2.1rem;
+    color: #0088a9;
+    font-weight: 700;
+    position: relative;
+
+}
+
+.culture_text p {
+    position: relative;
+    margin-top: 30px;
+    width: 500px;
+    font-size: 1.4rem;
+
+}
+
+
+.div_cuisine {
+    position: relative;
+    display: block;
+    margin-left: 10%;
+    margin-top: 8%;
+    float: left;
+}
+
+.div_cuisine img {
+    position: relative;
+    width: 25vw;
+    float: left;
+}
+
+.cuisine_text {
+    float: left;
+    position: relative;
+    margin-left: 100px;
+    margin-top: 30px;
+}
+
+.cuisine_text a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.cuisine_text h3 {
+    font-size: 2.1rem;
+    color: #0088a9;
+    font-weight: 700;
+    position: relative;
+}
+
+.cuisine_text p {
+    position: relative;
+    margin-top: 30px;
+    width: 500px;
+    font-size: 1.4rem;
+}
+
+
+/* Map */
+.map {
+    position: relative;
+    height: calc(100vh - 15px);
+    display: block;
+    z-index: 0;
+    background-image: url("../images/map_background.jpg");
+    background-position: 200%, cover;
+    background-position: -100px 100%, 50% 0;
+}
+
+.map-wrapper {
+    display: block;
+    max-width: 100%;
+    position: absolute;
+    width: 83%;
+    max-width: 1065px;
+    top: 20px;
+}
+
+.map-wrapper img {
+    margin-left: 370px;
+}
+
+.map p {
+    font-size: 18px;
+    position: absolute;
+    color: rgb(230, 230, 230);
+    font-weight: 600;
+    width: auto;
+    height: auto;
+    cursor: pointer;
+    z-index: 2;
+}
+
+
+.map p span {
+    border-bottom: dashed currentColor;
+}
+
+
+p.kauai {
+    margin-top: 50px;
+    margin-left: 350px;
+    padding-right: 160px;
+    padding-bottom: 100px;
+}
+
+
+
+p.oahu {
+    margin-top: 140px;
+    margin-left: 670px;
+    padding-right: 150px;
+    padding-bottom: 65px;
+    padding-top: 40px;
+}
+
+p.molokai {
+    margin-top: 220px;
+    margin-left: 910px;
+    padding-right: 40px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+}
+
+p.lanai {
+    margin-top: 310px;
+    margin-left: 890px;
+    padding-right: 60px;
+    padding-bottom: 20px;
+}
+
+p.maui {
+    margin-top: 280px;
+    margin-left: 1030px;
+    padding-left: 120px;
+    padding-bottom: 80px;
+    padding-top: 20px;
+}
+
+p.hawaii {
+    margin-top: 410px;
+    margin-left: 1050px;
+    padding: 90px 260px 154px 0;
+}
+
+
+
+/* Island Info */
+
+.info_div {
+    position: relative;
+    height: 45vh;
+    display: block;
+    background-color: rgb(241, 239, 239);
+    ;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+.info_div .text {
+    position: relative;
+    display: block;
+    margin-left: 10%;
+    margin-top: 17%;
+    float: left;
+}
+
+.info_div h2 {
+    position: absolute;
+    font-size: 4rem;
+    top: 40px;
+    color: rgb(46, 46, 59);
+    border-bottom: solid 5px currentColor;
+}
+
+.info_div .text p {
+    position: relative;
+    width: 1040px;
+    font-size: 1.4rem;
+    margin-right: 60px;
+    top: -60px;
+    line-height: 2.3rem;
+}
+
+
+
+.island-showcase {
+    position: relative;
+    height: auto;
+    background-image: url("../images/Leaf\ background\ with\ overlay.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+
+.island-wrapper {
+    /* padding-top: 140px; */
+    padding-bottom: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 70px;
+    grid-row-gap: 50px;
+    margin: 0 auto;
+    color: #fff;
+}
+
+.island-showcase h1 {
+    color: #fff;
+    font-size: 40px;
+    width: auto;
+    padding: 40px 0 40px 80px;
+}
+
+.island-wrapper div h2 {
+    margin: 20px 0 40px 0;
+    font-size: 27px;
+}
+
+.island-wrapper div p {
+    width: 380px;
+    font-size: 18px;
+}
+
+.kauai-showas {
+    grid-area: 1 / 1 / 3 / 4;
+}
+
+.oahu-showase {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.molokai-showase {
+    grid-area: 1 / 3 / 2 / 4;
+}
+
+.lanai-showase {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.maui-showase {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.hawaiiIsland-showase {
+    grid-area: 2 / 3 / 3 / 4;
+}
+
+
+
+/* Experience Hawaii */
+
+
+.experince-showcase {
+    position: relative;
+    height: auto;
+    background-image: url("../images/wood\ background\ overlay.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.flex-wrapper {
+    display: flex;
+
+}
+
+.experince-showcase h1 {
+    color: #fff;
+    font-size: 40px;
+    width: auto;
+    padding: 40px 0 30px 80px;
+    /* padding-top: ; */
+}
+
+.experince-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 70px;
+    grid-row-gap: 50px;
+    margin: 0 auto;
+    color: #fff;
+    padding-bottom: 100px;
+}
+
+.experince-wrapper div h2 {
+    margin: 20px 0 40px 0;
+    font-size: 27px;
+}
+
+.experince-wrapper div p {
+    width: 380px;
+    font-size: 18px;
+}
+
+.sightseeing-showcase {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.advantures-showcase {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.golf-showcase {
+    grid-area: 1 / 3 / 2 / 4;
+}
+
+
+/* signup user */
+.wrapper-signup {
+    height: calc(100vh - 61.25px);
+    position: relative;
+    display: block;
+    margin-top: 61.25px;
+    justify-content: center;
+}
+
+.section-default {
+    height: auto;
+    justify-items: center;
+    display: grid;
+    grid-column: 1;
+}
+
+.section-default h1 {
+    font-size: 45px;
+    margin: 40px 0 10px 0;
+    color: #0088a9;
+}
+
+.section-default form {
+    display: grid;
+    grid-column: 1;
+}
+
+.section-default form>input {
+    width: 250px;
+    padding: 10px 5px;
+    font-size: 15px;
+    margin: 5px 0;
+    border: #0088a9 solid 2px;
+}
+
+.submit-span {
+    display: flex;
+    justify-content: center;
+}
+
+.submit-span button {
+    width: 80px;
+    padding: 7px 5px;
+    font-size: 16px;
+    margin: 5px 0;
+    background-color: #0088a9;
+    border: #0088a9 solid 2px;
+    color: #fff;
+    border-radius: 3px;
+}
+
+.checkpoint-news {
+    width: 250px;
+    position: relative;
+    margin: 3px 0 10px 0;
+    display: flex;
+    justify-content: center;
+
+}
+
+.checkpoint-news label {
+    position: relative;
+    margin-top: 1px;
+}
+
+.checkpoint-news input {
+    position: relative;
+    margin-right: 10px;
+}
+
+
+input[type=text],
+input[type=password] {
+    color: #000;
+    font-size: 19px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-wrap: break-word;
+}
+
+
+
+
+
+
+
+
+
+/*------------ FOOTER ------------*/
+
+footer {
+    height: 20vh;
+    position: relative;
+}
+
+footer .upper {
+    background-color: #00a7d1;
+    height: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+footer .upper a {
+    text-decoration: none;
+    color: white;
+}
+
+footer .upper ul {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+footer .upper li {
+    list-style: none;
+    margin-left: 190px;
+    margin-right: 190px;
+}
+
+
+footer .lower {
+    background-color: #0081a1;
+    height: 30%;
+}
+
+.lower p {
+    position: absolute;
+    margin: 18px 0 0 60px;
+    color: rgb(182, 181, 181);
+    font-size: 1.1rem;
+    word-spacing: 4px;
+}
+
+
+/* Account */
+
+.account-main {
+    min-height: calc(100vh - 61.25px);
+    height: auto;
+    display: block;
+    position: relative;
+    margin-top: 61px;
+    padding: 50px 0;
+    padding-left: 5px;
+    padding-top: 20px;
+}
+
+
+textarea {
+    width: 600px;
+    height: 80px;
+    background-color: #fff;
+    resize: none;
+    font-size: 13px;
+}
+
+.all-comments {
+    margin-top: 30px;
+}
+
+.comment-submit {
+    width: 100px;
+    height: 30px;
+    background-color: #0088a9;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+} 
+
+
+.comment-box {
+    width: 600px;
+    min-height: 40px;
+    height: auto;
+    max-height: 150px;
+    padding: 1px 10px;
+    margin: 3px 0;
+    display: block;
+    position: relative;
+    background-color: #fff;
+}
+
+.comment-box p {
+    position: relative;
+}
